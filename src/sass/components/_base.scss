@@ -1,0 +1,47 @@
+body {
+  background: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+h2 {
+} /*
+.container {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 60px 0px;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+*/
