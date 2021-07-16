@@ -1,0 +1,24 @@
+.button {
+  background-color: $brand-color;
+  color: $white-color;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  padding-right: 17px;
+  padding-left: 17px;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bg-2;
+  }
+}
+.button--light {
+  background-color: $white-color;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bg-1;
+  }
+}
