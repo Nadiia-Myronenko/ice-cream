@@ -5,6 +5,9 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
 }
 a {
   text-decoration: none;
@@ -24,6 +27,14 @@ p {
   margin: 0;
 }
 h2 {
+  font-family: Titan One, sans-serif;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $brand-color;
+  margin-bottom: 30px;
 } /*
 .container {
   @media screen and (min-width: $mobile) {
