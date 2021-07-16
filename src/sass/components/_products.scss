@@ -2,7 +2,16 @@
   margin-bottom: 145px;
 }
 
+// .product-list {
+//   display: flex;
+//   flex-direction: column;
+// }
+
 .product-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   position: relative;
   margin-bottom: 130px;
 
@@ -14,17 +23,98 @@
 
 .product-list__item {
   background-color: $additional-bg-color-1;
-  &::before {
-    content: '';
-    position: absolute;
+  border-radius: 24px;
 
-    top: 0;
-    left: 50%;
-
-    width: 250px;
-    height: 250px;
-    transform: translate(-50%, -50%);
-
-    background-image: url(/images/iceCream_250x250.png);
+  &:hover,
+  &:focus {
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+
+.product-list__item--iceCream::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 250px;
+  height: 250px;
+
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-image: url(/images/iceCream_250x250.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/iceCream_250x250_x2.png);
+  }
+}
+
+.product-list__item--iceCoffee::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 250px;
+  height: 250px;
+
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-image: url(/images/iceCoffee_250x250.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/iceCoffee_250x250_x2.png);
+  }
+}
+
+.product-list__item--milkshakes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 250px;
+  height: 250px;
+
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-image: url(/images/milkshakes_250x250.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/milkshakes_250x250_x2.png);
+  }
+}
+
+.product-list__title {
+  margin-bottom: 70px;
+
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.product-list__text {
+  margin-bottom: 60px;
+
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $white-color;
+}
+
+.product-list__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: #fff;
+  border: 0;
 }
