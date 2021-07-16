@@ -1,7 +1,7 @@
 body {
   background: $primary-bg-color;
   color: $primary-text-color;
-  font-family: DM Sans, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
@@ -27,7 +27,7 @@ p {
   margin: 0;
 }
 h2 {
-  font-family: Titan One, sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-size: 34px;
   line-height: 1.147;
   text-align: center;
@@ -35,7 +35,7 @@ h2 {
   text-transform: uppercase;
   color: $brand-color;
   margin-bottom: 30px;
-} /*
+}
 .container {
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -46,13 +46,16 @@ h2 {
   @media screen and (min-width: $desktop) {
     width: $desktop;
   }
-  padding: 0 15px;
   margin: 0 auto;
-}
-.section {
-  padding: 60px 0px;
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
+  padding: 0 20px;
+  @media screen and(min-width:$tablet) {
+    padding: 0 36px;
   }
 }
-*/
+/* Для всех секций кроме галлереи */
+.section {
+  padding: 100px 0px;
+  @media screen and (min-width: $tablet) {
+    padding: 130px 0;
+  }
+}
