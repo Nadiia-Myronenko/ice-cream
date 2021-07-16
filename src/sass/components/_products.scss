@@ -1,0 +1,30 @@
+.section__title--marginbottom {
+  margin-bottom: 145px;
+}
+
+.product-list__item {
+  position: relative;
+  margin-bottom: 130px;
+
+  padding-top: 160px;
+  padding-bottom: 110px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.product-list__item {
+  background-color: $additional-bg-color-1;
+  &::before {
+    content: '';
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 250px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+
+    background-image: url(/images/iceCream_250x250.png);
+  }
+}
