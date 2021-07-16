@@ -36,6 +36,24 @@ h2 {
   color: $brand-color;
   margin-bottom: 30px;
 }
+.title-label {
+  font-family: 'Titan One', sans-serif;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: $label-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+  }
+}
 .container {
   @media screen and (min-width: $mobile) {
     width: $mobile;
