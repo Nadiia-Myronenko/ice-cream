@@ -1,0 +1,26 @@
+.container {
+  background: $secondary-bg-color;
+}
+.title-label {
+}
+.container-button {
+  background-color: $white-color;
+  color: $brand-color;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 22px;
+  min-width: 160px;
+  border: 0px solid transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bg-1;
+  }
+}
