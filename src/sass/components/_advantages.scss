@@ -1,0 +1,48 @@
+.section {
+  background-color: $secondary-bg-color;
+}
+
+.box {
+  margin-top: 38px;
+  margin-right: 70px;
+}
+.box:nth-child(1)::before {
+  width: 50px;
+  height: 50px;
+  content: url(../images/advantages1_35x50.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.box:nth-child(2)::before {
+  width: 50px;
+  height: 50px;
+  content: url(../images/advantages2_50x50.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box:nth-child(3)::before {
+  width: 50px;
+  height: 50px;
+  content: url(../images/advantages3_45x50.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.box-list__title {
+  margin-top: 16px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $brand-color;
+}
+.box-list__description {
+  color: $accent-text-color;
+}
+.hidden-header {
+  display: none;
+}
