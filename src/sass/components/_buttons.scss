@@ -8,8 +8,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.313;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 9px 17px;
+  border-radius: 22px;
+  border: none;
   &:hover,
   &:focus {
     background-color: $btn-hover-bg-2;
@@ -17,8 +18,30 @@
 }
 .button--light {
   background-color: $white-color;
+  color: $brand-color;
   &:hover,
   &:focus {
     background-color: $btn-hover-bg-1;
+  }
+}
+/* дополнительные классы-модификаторы для кнопок, в которых есть стрелка */
+.button--arrow-dark {
+  &::after {
+    content: '';
+    border: solid $brand-color;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 12px;
+  }
+}
+.button--arrow--arrow-light {
+  &::after {
+    content: '';
+    border: solid $white-color;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 12px;
   }
 }
