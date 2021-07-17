@@ -1,26 +1,18 @@
-.container {
+.section {
   background: $secondary-bg-color;
 }
-.title-label {
-}
-.container-button {
-  background-color: $white-color;
-  color: $brand-color;
-  font-family: 'DM Sans', sans-serif;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.313;
-  padding-right: 17px;
-  padding-left: 17px;
-  border-radius: 22px;
-  min-width: 160px;
-  border: 0px solid transparent;
-
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-bg-1;
+.container {
+  background-position: 0 93%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../images/milk_320x133.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/milk_320x133x2.png);
   }
+}
+.conteiner-text__item {
+  margin: 46px 30px;
+}
+.conteiner-text__description {
+  color: $accent-text-color;
 }
