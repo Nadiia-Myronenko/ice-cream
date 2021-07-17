@@ -1,0 +1,26 @@
+.hero-header {
+  background-color: $additional-bg-color-1;
+}
+.logo {
+  margin-top: 6px;
+}
+.mobile-nav-button {
+  /*display: block;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;*/
+
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 25px 0 0 0;
+  width: 20px;
+  height: 20px;
+}
+.nav-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
