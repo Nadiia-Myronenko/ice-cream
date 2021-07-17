@@ -1,3 +1,4 @@
+/* красная и белая кнопочки */
 .button {
   background-color: $brand-color;
   color: $white-color;
@@ -35,7 +36,7 @@
     margin-left: 12px;
   }
 }
-.button--arrow--arrow-light {
+.button--arrow-light {
   &::after {
     content: '';
     border: solid $white-color;
@@ -44,4 +45,13 @@
     transform: rotate(-45deg);
     margin-left: 12px;
   }
+}
+/* Кнопка круг со стрелочкой */
+.button-more {
+  width: 40px;
+  height: 40px;
+  background-color: $white-color;
+  background-image: url(../images/arrowRight.svg);
+  border: none;
+  border-radius: 50%;
 }
