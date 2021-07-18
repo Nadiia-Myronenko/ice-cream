@@ -1,0 +1,18 @@
+.section {
+  background: $secondary-bg-color;
+}
+.container {
+  background-position: 0 93%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../images/milk_320x133.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/milk_320x133x2.png);
+  }
+}
+.container-text__item {
+  margin: 46px 30px;
+}
+.container-text__description {
+  color: $accent-text-color;
+}
