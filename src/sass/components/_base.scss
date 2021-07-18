@@ -35,6 +35,15 @@ h2 {
   text-transform: uppercase;
   color: $brand-color;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
 .title-label {
   font-family: 'Titan One', sans-serif;
