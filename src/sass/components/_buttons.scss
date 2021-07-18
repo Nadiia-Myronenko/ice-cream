@@ -5,13 +5,14 @@
   font-family: 'DM Sans', sans-serif;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.313;
   padding: 9px 17px;
   border-radius: 22px;
   border: none;
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: $btn-hover-bg-2;

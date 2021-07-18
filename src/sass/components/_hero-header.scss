@@ -1,3 +1,121 @@
 .hero-header {
-  background: red;
+  padding-top: 6px;
+  background-color: $additional-bg-color-1;
+  height: 502px;
+  background-size: 171px, 284px;
+  background-image: url('../images/heroCream_170x410.png'), url('../images/pinkElipse_350x350.png');
+  background-repeat: no-repeat;
+  background-position: top 92px right 32px, top 83px right 0;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/heroCream_170x410_x2.png'),
+      url('../images/pinkElipse_350x350_x2.png');
+  }
+}
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.logo {
+  display: block;
+}
+.logo-img {
+  display: block;
+}
+/* Секция мобильного меню */
+.nav-block {
+  position: relative;
+  margin-bottom: 137px;
+}
+.mobile-nav-button {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 1000;
+  top: 25px;
+  right: 0;
+}
+.mobile-nav-button .icon-cross {
+  display: none;
+}
+.mobile-nav-button.is-open .icon-cross {
+  display: block;
+}
+.mobile-nav-button.is-open .icon-nav {
+  display: none;
+}
+
+.mobile-nav {
+  background-color: $nav-bg-color;
+  display: none;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  padding: 60px 0;
+  width: 250px;
+  height: 100%;
+}
+.mobile-nav.is-open {
+  display: block;
+}
+.mobile-nav__btn {
+  width: 209px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mobile-menu {
+  padding-top: 32px;
+}
+.mobile-menu__link {
+  color: $white-color;
+  display: block;
+  padding: 20px 11px;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.286;
+}
+.mobile-menu__item {
+  border-top: 1px solid $nav-border-color;
+}
+.mobile-menu__item:last-child {
+  border-bottom: 1px solid $nav-border-color;
+}
+/* Конец секции мобильного меню */
+.main-title {
+  font-family: Titan One, sans-serif;
+  font-size: 26px;
+  line-height: 0.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-color;
+  width: 218px;
+  margin-bottom: 19px;
+  font-weight: normal;
+}
+.main-title__accent {
+  font-size: 48px;
+  line-height: 0.965;
+  color: $brand-color;
+}
+.hero-buttons {
+  display: flex;
+}
+.hero-buttons__button {
+  font-size: 8px;
+  line-height: 1.25;
+}
+.hero-buttons__button:not(:last-child) {
+  margin-right: 8px;
 }

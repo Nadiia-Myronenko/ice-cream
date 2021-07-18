@@ -1,6 +1,37 @@
 <section class="hero-header">
-    <header>
-        <button class="button button--light button--arrow-dark" type="button">Buy now</button>
-        <button class="button-more" type="button" arial-label="more"></button>
+     <header class="header">
+        <nav class="nav-block">
+            <a href="/" class="logo">
+                <img class="logo-img" srcset="./images/logo.png 1x, ./images/logo2x.png 2x" src="./images/logo.png" alt="logo Icecream" />
+            </a>
+            <button class="mobile-nav-button" type="button" data-menu-button aria-expanded="false"
+                aria-controls="menu-container">
+                <svg class="mobile-nav-icon" aria-label="Переключатель мобильного меню">
+                    <use width="20" height="12" class="icon-nav" href="./images/sprite.svg#burger"></use>
+                    <use width="12" height="12" class="icon-cross" href="./images/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="mobile-nav" id="mobile-nav" data-menu>
+                <button class="button button--light button--arrow-dark mobile-nav__btn" type="button">Buy now</button>
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">Home</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">About us</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">How it’s made?</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">Our products</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+    <div class="container">
+        <div class="hero">
+            <h1 class="main-title">ice cream
+            made with<span class="main-title__accent">
+            passion</span></h1>
+            <div class="hero-buttons">
+                <a class="button hero-buttons__button" href="/">Products</a>
+                <a class="button button--light hero-buttons__button" href="/">How it’s made?</a>
+            </div>
+        </div>
+    </div>
 </section>
