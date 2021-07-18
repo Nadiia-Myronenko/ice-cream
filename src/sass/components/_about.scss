@@ -11,6 +11,11 @@
     background-image: url(../images/milk_320x133x2.png);
   }
 }
+.container-flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
 .container-text__item {
   margin: 46px 30px;
 }
