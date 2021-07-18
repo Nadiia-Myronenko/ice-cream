@@ -1,0 +1,12 @@
+.section-gallery {
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 365px;
+  height: 120px;
+
+  background-image: url(/images/gallery_365x120.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/gallery_365x120_x2.png);
+  }
+}
