@@ -2,11 +2,32 @@
   margin-right: auto;
   margin-left: auto;
 
-  width: 365px;
+  width: 320px;
   height: 120px;
 
-  background-image: url(/images/gallery_365x120.png);
+  background-size: cover;
+  background-image: url(/images/gallery_320x120.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/gallery_365x120_x2.png);
+    background-image: url(/images/gallery_320x120_x2.png);
+  }
+
+  @media screen and(min-width: $tablet) {
+    width: 768px;
+    height: 265px;
+
+    background-image: url(/images/gallery_768x265.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/gallery_768x265_x2.png);
+    }
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 1280px;
+    height: 430px;
+
+    background-image: url(/images/gallery_1280x430.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/gallery_1280x430_x2.png);
+    }
   }
 }
