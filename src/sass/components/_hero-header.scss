@@ -12,6 +12,10 @@
       url('../images/pinkElipse_350x350_x2.png');
   }
 }
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .logo {
   margin-top: 6px;
   display: block;
@@ -50,6 +54,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .mobile-nav {
   background-color: $nav-bg-color;
