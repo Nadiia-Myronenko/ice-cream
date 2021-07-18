@@ -28,6 +28,10 @@
 
   background-color: #fafafa;
   color: #000000;
+
+  &::before {
+    content: '';
+  }
 }
 .customer__location {
   position: relative;
@@ -41,10 +45,11 @@
 
   color: #000000;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    top: 30px;
+    top: -20px;
+    left: 50%;
 
     width: 30px;
     height: 4px;
