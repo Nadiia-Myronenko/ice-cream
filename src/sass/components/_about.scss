@@ -1,13 +1,19 @@
-.section {
+.section-about {
   background: $secondary-bg-color;
+  padding-top: 100px;
 }
-.container {
+.container-about {
   background-position: 0 93%;
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../images/milk_320x133.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/milk_320x133x2.png);
+  }
+}
+.container-flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
   }
 }
 .container-text__item {
