@@ -1,8 +1,24 @@
 .section--contacts-background {
   background: linear-gradient($white-color 12%, $secondary-bg-color 1%);
+
+  @media screen and( min-width: $tablet) {
+    background: linear-gradient($white-color 22%, $secondary-bg-color 1%);
+  }
+  @media screen and( min-width: $desktop) {
+    background: linear-gradient($white-color 26%, $secondary-bg-color 1%);
+  }
 }
 .contacts {
   margin-bottom: 55px;
+
+  @media screen and( min-width: $tablet) {
+    display: flex;
+    margin-bottom: 80px;
+  }
+  @media screen and( min-width: $desktop) {
+    justify-content: center;
+    margin-bottom: 85px;
+  }
 }
 .contacts__item {
   width: 220px;
@@ -15,6 +31,23 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media screen and( min-width: $tablet) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    @media screen and( min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and( min-width: $tablet) {
+    margin: 0;
+    padding: 50px 30px;
+  }
+  @media screen and( min-width: $desktop) {
+    width: 330px;
+    padding: 55px 40px;
   }
 }
 
@@ -27,6 +60,12 @@
   color: $white-color;
   background-color: $additional-bg-color-2;
   border-radius: 4px;
+
+  @media screen and( min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+  }
 }
 .contacts__title--background {
   background-color: $additional-bg-color-3;
@@ -40,6 +79,14 @@
     border-bottom: none;
     padding-top: 25px;
     padding-bottom: 0;
+
+    @media screen and( min-width: $tablet) {
+      padding-top: 30px;
+    }
+  }
+
+  @media screen and( min-width: $tablet) {
+    padding: 30px 0;
   }
 }
 
@@ -52,10 +99,20 @@
   letter-spacing: 0.04em;
 
   color: $accent-text-color;
+
+  @media screen and( min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 
 .contacts__text {
   line-height: 1.5;
+
+  @media screen and( min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
 }
 
 .contacts__timetable-label {
@@ -64,28 +121,54 @@
   line-height: 1.83;
 
   color: $accent-text-color;
+
+  @media screen and( min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 
 .contacts__timetable-text {
   line-height: 1.83;
 
   color: $label-color;
+
+  @media screen and( min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 
 .contacts__link {
   display: block;
 
   color: $primary-text-color;
+
+  @media screen and( min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 .button-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and( min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
 }
 
 .button-list__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media screen and( min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
 }
 
 .button--contacts-width {
