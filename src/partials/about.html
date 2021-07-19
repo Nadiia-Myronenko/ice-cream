@@ -5,14 +5,28 @@
     <h2 class="title-heading">how it’s made?</h2>
     <div class="container-flex">
       <div class="container-images">
-        <img
-          srcset="../src/images/cow_280x280.png x1, ../src/images/cow_280x280_x2.png x2"
-          src="../src/images/cow_280x280.png"
-          alt="cow with a jug of milk"
-        />
+        ​<picture>
+          <source
+            srcset="../src/images/cow_280x280.png x1, ../src/images/cow_280x280_x2.png x2 "
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="../src/images/cow_340x340.png x1, ../src/images/cow_340x340_x2.png x2"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="../src/images/cow_515x515.png x1, ../src/images/cow_515x515_x2.png x2"
+            type="image/png"
+            media="(min-width: 1280px)"
+          />
+
+          <img src="../src/images/cow_280x280.png" alt="cow with a jug of milk" />
+        </picture>
       </div>
       <div class="container-text">
-        <ul>
+        <ul class="container-text__list">
           <li class="container-text__item">
             <p class="container-text__description">
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
