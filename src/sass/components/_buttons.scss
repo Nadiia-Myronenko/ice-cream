@@ -60,4 +60,8 @@
 .button-more--little {
   width: 18px;
   height: 18px;
+  @media screen and (min-width: $desktop) {
+    width: 26px;
+    height: 26px;
+  }
 }

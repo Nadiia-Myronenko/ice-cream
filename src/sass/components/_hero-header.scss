@@ -1,4 +1,7 @@
 .hero-header {
+  background-color: $additional-bg-color-1;
+}
+.hero-header__wrapper {
   padding: 6px 20px;
   background-color: $additional-bg-color-1;
   height: 502px;
@@ -32,9 +35,19 @@
   @media screen and (min-width: $desktop) {
     width: $desktop;
     height: 665px;
+    padding: 37px 46px 0;
+    background-size: 236px, 538px;
+    background-position: top 108px right 450px, top 52px right 267px;
+    background-image: url('../images/heroCream_235x555.png'),
+      url('../images/pinkElipse_540x540.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/heroCream_235x555_x2.png'),
+        url('../images/pinkElipse_540x540_x2.png');
+    }
   }
 }
-
 .header {
   margin-bottom: 137px;
   @media screen and (min-width: $tablet) {
@@ -142,7 +155,7 @@
   font-weight: bold;
   @media screen and (max-width: $desktop - 1) {
     line-height: 1.286;
-    padding: 20px 11px;
+    padding: 11px 24px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 16px;
@@ -185,6 +198,7 @@
   }
   @media screen and (min-width: $desktop) {
     font-size: 38px;
+    line-height: 0.6;
     width: 277px;
     padding-top: 15px;
     margin-bottom: 25px;
@@ -226,7 +240,14 @@
   }
 }
 .hero___thumb {
-  padding-left: 81px;
+  @media screen and (min-width: $desktop) {
+    padding-left: 81px;
+  }
+}
+.sale-points-list {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
 }
 .accent-number {
   font-family: 'Titan One', sans-serif;
@@ -240,10 +261,11 @@
   z-index: 2;
   top: 0;
   right: 8px;
-}
-.sale-points-list {
-  @media screen and (max-width: $tablet - 1) {
-    display: none;
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    line-height: 1.152;
+    top: 8px;
+    right: 13px;
   }
 }
 .sale-points-list__text {
@@ -253,6 +275,11 @@
   color: $white-color;
   padding-top: 29px;
   margin-right: 10px;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.29;
+    padding-top: 60px;
+  }
 }
 .sale-points-list__item {
   position: relative;
@@ -270,6 +297,10 @@
     z-index: 1;
     top: 0;
     right: 0;
+    @media screen and (min-width: $desktop) {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 .description-block {
@@ -281,9 +312,18 @@
   line-height: 1.5;
   color: $white-color;
   margin-left: 120px;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 200px;
+    margin-left: 249px;
+  }
 }
 .description-block__text {
   margin-bottom: 7px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 20px;
+  }
 }
 .bio-eco {
   @media screen and (max-width: $tablet - 1) {
@@ -296,6 +336,7 @@
   bottom: 0;
   @media screen and (min-width: $desktop) {
     width: 188px;
+    left: 31px;
   }
 }
 .so-testy {
@@ -307,4 +348,9 @@
   position: absolute;
   right: 0;
   bottom: -20px;
+  @media screen and (min-width: $desktop) {
+    width: 293px;
+    right: 63px;
+    bottom: -54px;
+  }
 }
