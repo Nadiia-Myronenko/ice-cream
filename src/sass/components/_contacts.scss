@@ -5,7 +5,12 @@
     background: linear-gradient($white-color 22%, $secondary-bg-color 1%);
   }
   @media screen and( min-width: $desktop) {
-    background: linear-gradient($white-color 26%, $secondary-bg-color 1%);
+    background-image: url(/images/drops_1920х380.png),
+      linear-gradient($white-color 26%, $secondary-bg-color 1%);
+
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 .contacts {
