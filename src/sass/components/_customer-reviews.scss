@@ -15,9 +15,9 @@
   }
 }
 
-.customer__text {
-  margin-bottom: 50px;
+.customer__container {
   position: relative;
+  margin-bottom: 50px;
 
   padding-top: 45px;
   @media screen and(min-width: 320px) and(max-width: 767px) {
@@ -27,16 +27,7 @@
     padding-right: 63px;
     padding-bottom: 25px;
   }
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.58;
-  text-align: center;
-
   background-color: #fafafa;
-  color: #000000;
-  z-index: 3;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
@@ -44,9 +35,6 @@
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 35px;
-
-    font-size: 14px;
-    line-height: 2.16;
   }
 
   @media screen and (min-width: $desktop) {
@@ -54,9 +42,6 @@
     padding-left: 87px;
     padding-right: 89px;
     padding-bottom: 40px;
-
-    font-size: 16px;
-    line-height: 1.86;
   }
 
   &::before {
@@ -64,22 +49,49 @@
     position: absolute;
     top: 28px;
     left: 60px;
+    z-index: 2;
 
     width: 55px;
     height: 40px;
 
     background-image: url(/images/quotes.svg);
-    z-index: 2;
+    background-size: cover;
 
     @media screen and (min-width: $tablet) {
-      top: 40px;
-      left: 30px;
+      top: 30px;
+      left: 40px;
     }
     @media screen and (min-width: $desktop) {
       top: 30px;
       left: 50px;
     }
   }
+}
+
+.customer__text {
+  position: relative;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  z-index: 3;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  color: #000000;
+  background-image: repeating-linear-gradient(transparent, #fafafa 28px, #e1e1e1 30px);
 }
 .customer__location {
   position: relative;
@@ -93,6 +105,15 @@
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 35px;
+
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
 
   &::before {
     content: '';
