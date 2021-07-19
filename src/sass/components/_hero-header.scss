@@ -1,5 +1,5 @@
 .hero-header {
-  padding-top: 6px;
+  padding: 6px 20px;
   background-color: $additional-bg-color-1;
   height: 502px;
   background-size: 171px, 284px;
@@ -12,10 +12,27 @@
     background-image: url('../images/heroCream_170x410_x2.png'),
       url('../images/pinkElipse_350x350_x2.png');
   }
+  @media screen and (min-width: $tablet) {
+    padding: 37px 34px 0;
+    height: 399px;
+    background-size: 143px, 324px;
+    background-image: url('../images/heroCream_145x335.png'),
+      url('../images/pinkElipse_320x320.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/heroCream_145x335_x2.png'),
+        url('../images/pinkElipse_320x320_x2.png');
+      background-position: top 63px right 247px, top 31px right 137px;
+    }
+  }
 }
+
 .header {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 137px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 15px;
+  }
 }
 .logo {
   display: block;
@@ -23,10 +40,18 @@
 .logo-img {
   display: block;
 }
+.header__button {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+  width: 160px;
+  height: 44px;
+}
 /* Секция мобильного меню */
 .nav-block {
   position: relative;
-  margin-bottom: 137px;
+  display: flex;
+  justify-content: space-between;
 }
 .mobile-nav-button {
   display: inline-flex;
@@ -38,8 +63,11 @@
   height: 20px;
   position: absolute;
   z-index: 1000;
-  top: 25px;
+  top: 20px;
   right: 0;
+  @media screen and (min-width: $tablet) {
+    right: 190px;
+  }
 }
 .mobile-nav-button .icon-cross {
   display: none;
@@ -62,6 +90,11 @@
   padding: 60px 0;
   width: 250px;
   height: 100%;
+  box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: $tablet) {
+    top: 32px;
+    right: 215px;
+  }
 }
 .mobile-nav.is-open {
   display: block;
@@ -93,6 +126,9 @@
   border-bottom: 1px solid $nav-border-color;
 }
 /* Конец секции мобильного меню */
+.hero {
+  position: relative;
+}
 .main-title {
   font-family: Titan One, sans-serif;
   font-size: 26px;
@@ -101,14 +137,23 @@
   text-transform: uppercase;
   color: $white-color;
   width: 218px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   font-weight: normal;
+  padding-top: 10px;
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    width: 162px;
+  }
 }
 .main-title__accent {
   font-size: 48px;
   line-height: 0.965;
   color: $brand-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+  }
 }
+
 .hero-buttons {
   display: flex;
 }
@@ -118,4 +163,87 @@
 }
 .hero-buttons__button:not(:last-child) {
   margin-right: 8px;
+}
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 66px;
+}
+.accent-number {
+  font-family: 'Titan One', sans-serif;
+  font-size: 28px;
+  line-height: 1.143;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $brand-color;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 8px;
+}
+.sale-points-list {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+}
+.sale-points-list__text {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $white-color;
+  padding-top: 29px;
+  margin-right: 10px;
+}
+.sale-points-list__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: $white-color;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+}
+.description-block {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+  width: 114px;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $white-color;
+  margin-left: 120px;
+}
+.description-block__text {
+  margin-bottom: 7px;
+}
+.bio-eco {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+  display: block;
+  width: 124px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.so-testy {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+  display: block;
+  width: 168px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
 }

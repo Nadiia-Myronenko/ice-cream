@@ -11,6 +11,7 @@
                     <use width="12" height="12" class="icon-cross" href="./images/sprite.svg#cross"></use>
                 </svg>
             </button>
+            <button class="button button--light button--arrow-dark header__button" type="button">Buy now</button>
             <div class="mobile-nav" id="mobile-nav" data-menu>
                 <button class="button button--light button--arrow-dark mobile-nav__btn" type="button">Buy now</button>
                 <ul class="mobile-menu">
@@ -23,15 +24,27 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="hero">
-            <h1 class="main-title">ice cream
-            made with<span class="main-title__accent">
-            passion</span></h1>
-            <div class="hero-buttons">
-                <a class="button hero-buttons__button" href="/">Products</a>
-                <a class="button button--light hero-buttons__button" href="/">How it’s made?</a>
+    <div class="hero">
+        <div class="hero__wrapper">
+            <div class="hero___thumb">
+                <h1 class="main-title">ice cream
+                made with<span class="main-title__accent">
+                passion</span></h1>
+                <div class="hero-buttons">
+                    <a class="button hero-buttons__button" href="/">Products</a>
+                    <a class="button button--light hero-buttons__button" href="/">How it’s made?</a>
+                </div>
             </div>
+            <ul class="sale-points-list">
+                <li class="sale-points-list__item"><p class="accent-number">16</p><p class="sale-points-list__text">cafes</p></li>
+                <li class="sale-points-list__item"><p class="accent-number">23</p><p class="sale-points-list__text">food trucks</p></li>
+            </ul>
         </div>
+        <div class="description-block">
+            <p class="description-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="button-more button-more--little" aria-label="more"></button>
+        </div>
+        <img class="bio-eco" srcset="./images/bioEco.png 1x, ./images/bioEco_x2.png" src="./images/bioEco.png" alt="milk" width="124px">
+        <img class="so-testy" srcset="./images/soTasty.png 1x, ./images/soTasty_x2.png 2x" src="./images/soTasty.png" alt="girl with ice-cream" width="168px">
     </div>
 </section>
