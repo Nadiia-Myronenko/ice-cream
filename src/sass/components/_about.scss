@@ -16,11 +16,20 @@
       background-image: url(../images/milk_320x133x2.png);
     }
   }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/milk_1280x535.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/milk_1280x535_x2.png);
+    }
+  }
 }
 
 .container-flex {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1280px) {
     justify-content: center;
   }
 }
@@ -32,11 +41,20 @@
 }
 
 .container-images img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  @media screen and (min-width 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+  }
 }
 
 .container-text {
-  width: 340px;
+  @media screen and (min-width 768px) {
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+  }
 }
