@@ -48,6 +48,7 @@
 }
 
 .container-images img {
+  display: inline-block;
   @media screen and (min-width: $tablet) {
     width: 340px;
   }
