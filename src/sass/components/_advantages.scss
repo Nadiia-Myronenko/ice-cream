@@ -1,6 +1,6 @@
 .section-advantages {
   background-color: $secondary-bg-color;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     padding-bottom: 95px;
   }
   @media screen and (min-width: $tablet) {
@@ -18,7 +18,7 @@
     display: block;
     width: 35px;
     height: 50px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       margin-bottom: 17px;
     }
     @media screen and (min-width: $tablet) {
@@ -43,7 +43,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       margin-bottom: 17px;
     }
     @media screen and (min-width: $tablet) {
@@ -65,7 +65,7 @@
   &__item:nth-child(3):before {
     content: '';
     display: block;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       margin-bottom: 17px;
     }
     @media screen and (min-width: $tablet) {
@@ -86,8 +86,8 @@
 }
 
 .box-list__title {
-  font-family: Titan One;
-  font-style: normal;
+  font-family: 'Titan One', sans-serif;
+
   font-weight: normal;
   font-size: 36px;
   line-height: 1.13;
@@ -96,19 +96,28 @@
 
   color: $brand-color;
   margin-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
+
 .box-list {
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: calc(-1 * 30px);
-    margin-top: calc(-1 * 30px);
+    margin-left: -30px;
+    margin-top: -30px;
     justify-content: center;
     flex-wrap: wrap;
   }
 }
 .box-list__item {
   list-style: none;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     &:not(:last-child) {
       margin-bottom: 39px;
     }
@@ -137,4 +146,3 @@
 .hidden-header {
   display: none;
 }
-// url(../images/advantages1_35x50.png)

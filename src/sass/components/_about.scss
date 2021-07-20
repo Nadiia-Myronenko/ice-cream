@@ -1,7 +1,7 @@
 .section-about {
   background: $secondary-bg-color;
   padding-top: 100px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     padding-bottom: 39px;
   }
 
@@ -13,7 +13,7 @@
   background-position: 0 93%;
   background-repeat: no-repeat;
   background-size: 100%;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     background-image: url(../images/milk_320x133.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/milk_320x133x2.png);
