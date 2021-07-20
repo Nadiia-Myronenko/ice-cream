@@ -67,3 +67,14 @@
     width: 463px;
   }
 }
+.title-heading {
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    margin-bottom: 39px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 102px;
+  }
+}
