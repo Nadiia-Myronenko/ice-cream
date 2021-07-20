@@ -1,1 +1,14 @@
-<section class="section-gallery"></section>
+<section class="section-gallery">
+    <h2 class="hidden">Gallary</h2>
+    <picture>
+        <source srcset="../src/images/gallery_320x120.png 1x, ../src/images/gallery_320x120_x2.png 2x" type="image/png"
+            media="(max-width: 767px)" sizes="(min-width: 280px) " />
+    
+        <source srcset="../src/images/gallery_768x265.png 1x, ../src/images/gallery_768x265_x2.png 2x" type="image/png"
+            media="(min-width: 768px)" sizes="(min-width: 340px) " />
+        <source srcset="../src/images/gallery_1280x430.png 1x, ../src/images/gallery_1280x430_x2.png 2x" type="image/png"
+            media="(min-width: 1280px)" sizes="(min-width: 463px) " />
+    
+        <img class="gallary-img" src="../src/images/gallery_1280x430.png" alt="gallary" width="1280px" />
+    </picture>
+</section>
