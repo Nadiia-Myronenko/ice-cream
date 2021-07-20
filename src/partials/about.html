@@ -5,29 +5,44 @@
     <h2 class="title-heading">how it’s made?</h2>
     <div class="container-flex">
       <div class="container-images">
-        <img
-          srcset="../src/images/cow_280x280.png x1, ../src/images/cow_280x280_x2.png x2"
-          src="../src/images/cow_280x280.png"
-          alt="cow with a jug of milk"
-        />
+        <picture>
+          <source
+            srcset="../src/images/cow_280x280.png 1x, ../src/images/cow_280x280_x2.png 2x"
+            type="image/png"
+            media="(max-width: 767px)"
+            sizes="(min-width: 280px) "
+          />
+
+          <source
+            srcset="../src/images/cow_340x340.png 1x, ../src/images/cow_340x340_x2.png 2x"
+            type="image/png"
+            media="(min-width: 768px)"
+            sizes="(min-width: 340px) "
+          />
+          <source
+            srcset="../src/images/cow_515x515.png 1x, ../src/images/cow_515x515_x2.png 2x"
+            type="image/png"
+            media="(min-width: 1280px)"
+            sizes="(min-width: 463px) "
+          />
+
+          <img src="../src/images/cow_515x515.png" alt="cow with a jug of milk" width="100%" />
+        </picture>
       </div>
+
       <div class="container-text">
-        <ul>
-          <li class="container-text__item">
-            <p class="container-text__description">
-              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-              faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-            </p>
-          </li>
-          <li class="container-text__item">
-            <p>
-              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-              orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
-              feugiat urna maximus. Cras massa nibh, tincidunt.
-            </p>
-            <p>Aliquam erat volutpat. Aenean accumsan.</p>
-          </li>
-        </ul>
+        <p class="container-text__description">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+
+        <p class="container-text__item">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="container-text__item">Aliquam erat volutpat. Aenean accumsan.</p>
+
         <button class="button button--light button--arrow-dark" type="button">Read more</button>
       </div>
     </div>
