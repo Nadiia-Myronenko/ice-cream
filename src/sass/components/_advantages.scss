@@ -114,9 +114,9 @@
     }
   }
   @media screen and (max-width: $tablet) {
-    .box-list__item n {
+    .box-list__item {
+      width: 230px;
     }
-    width: 230px;
   }
   @media screen and (min-width: $desktop) {
     width: 180px;
