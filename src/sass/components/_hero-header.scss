@@ -6,14 +6,15 @@
   background-color: $additional-bg-color-1;
   height: 502px;
   background-size: 171px, 284px;
-  background-image: url('../images/heroCream_170x410.png'), url('../images/pinkElipse_350x350.png');
+  background-image: url('../images/hero-cream_170x410.png'),
+    url('../images/pink-elipse_350x350.png');
   background-repeat: no-repeat;
   background-position: top 92px right 32px, top 83px right 0;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/heroCream_170x410_x2.png'),
-      url('../images/pinkElipse_350x350_x2.png');
+    background-image: url('../images/hero-cream_170x410_x2.png'),
+      url('../images/pink-elipse_350x350_x2.png');
   }
   @media screen and (min-width: $tablet) {
     width: $tablet;
@@ -23,13 +24,13 @@
     height: 399px;
     background-size: 143px, 324px;
     background-position: top 63px right 247px, top 31px right 137px;
-    background-image: url('../images/heroCream_145x335.png'),
-      url('../images/pinkElipse_320x320.png');
+    background-image: url('../images/hero-cream_145x335.png'),
+      url('../images/pink-elipse_320x320.png');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/heroCream_145x335_x2.png'),
-        url('../images/pinkElipse_320x320_x2.png');
+      background-image: url('../images/hero-cream_145x335_x2.png'),
+        url('../images/pink-elipse_320x320_x2.png');
     }
   }
   @media screen and (min-width: $desktop) {
@@ -38,13 +39,13 @@
     padding: 37px 46px 0;
     background-size: 236px, 538px;
     background-position: top 108px right 450px, top 52px right 267px;
-    background-image: url('../images/heroCream_235x555.png'),
-      url('../images/pinkElipse_540x540.png');
+    background-image: url('../images/hero-cream_235x555.png'),
+      url('../images/pink-elipse_540x540.png');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/heroCream_235x555_x2.png'),
-        url('../images/pinkElipse_540x540_x2.png');
+      background-image: url('../images/hero-cream_235x555_x2.png'),
+        url('../images/pink-elipse_540x540_x2.png');
     }
   }
 }
@@ -345,7 +346,7 @@
     left: 31px;
   }
 }
-.so-testy {
+.so-tasty {
   @media screen and (max-width: $tablet - 1) {
     display: none;
   }

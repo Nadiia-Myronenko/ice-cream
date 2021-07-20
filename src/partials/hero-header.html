@@ -1,52 +1,95 @@
 <section class="hero-header" id="home">
-    <div class="hero-header__wrapper">
-        <header class="header">
-            <nav class="nav-block">
-                <a href="/" class="logo">
-                    <img class="logo-img" srcset="./images/logo.png 1x, ./images/logo2x.png 2x" src="./images/logo.png" alt="logo Icecream" />
-                </a>
-                <button class="mobile-nav-button" type="button" data-menu-button aria-expanded="false"
-                    aria-controls="mobile-nav">
-                    <svg class="mobile-nav-icon" aria-label="Переключатель мобильного меню">
-                        <use width="20" height="12" class="icon-nav" href="./images/sprite.svg#burger"></use>
-                        <use width="12" height="12" class="icon-cross" href="./images/sprite.svg#cross"></use>
-                    </svg>
-                </button> 
-                <div class="mobile-nav" id="mobile-nav" data-menu>
-                    <button class="button button--light button--arrow-dark mobile-nav__btn" type="button">Buy now</button>
-                    <ul class="mobile-menu">
-                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#home">Home</a></li>
-                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">About us</a></li>
-                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">How it’s made?</a></li>
-                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#products">Our products</a></li>
-                        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#contacts">Contact</a></li>
-                    </ul>
-                </div>
-                <button class="button button--light button--arrow-dark header__button" type="button">Buy now</button>
-            </nav>
-        </header>
-        <div class="hero">
-            <div class="hero__wrapper">
-                <div class="hero___thumb">
-                    <h1 class="main-title">ice cream
-                    made with<span class="main-title__accent">
-                    passion</span></h1>
-                    <div class="hero-buttons">
-                        <a class="button hero-buttons__button" href="#products">Products</a>
-                        <a class="button button--light hero-buttons__button" href="#about">How it’s made?</a>
-                    </div>
-                </div>
-                <ul class="sale-points-list">
-                    <li class="sale-points-list__item"><p class="accent-number">16</p><p class="sale-points-list__text">cafes</p></li>
-                    <li class="sale-points-list__item"><p class="accent-number">23</p><p class="sale-points-list__text">food trucks</p></li>
-                </ul>
-            </div>
-            <div class="description-block">
-                <p class="description-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <button class="button-more button-more--little" aria-label="more"></button>
-            </div>
-            <img class="bio-eco" srcset="./images/bioEco.png 1x, ./images/bioEco_x2.png 2x" src="./images/bioEco.png" alt="milk" width="124px">
-            <img class="so-testy" srcset="./images/soTasty.png 1x, ./images/soTasty_x2.png 2x" src="./images/soTasty.png" alt="girl with ice-cream" width="168px">
+  <div class="hero-header__wrapper">
+    <header class="header">
+      <nav class="nav-block">
+        <a href="/" class="logo">
+          <img
+            class="logo-img"
+            srcset="./images/logo.png 1x, ./images/logo2x.png 2x"
+            src="./images/logo.png"
+            alt="logo ice-cream"
+          />
+        </a>
+        <button
+          class="mobile-nav-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <svg class="mobile-nav-icon" aria-label="Переключатель мобильного меню">
+            <use width="20" height="12" class="icon-nav" href="./images/sprite.svg#burger"></use>
+            <use width="12" height="12" class="icon-cross" href="./images/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="mobile-nav" id="mobile-nav" data-menu>
+          <button class="button button--light button--arrow-dark mobile-nav__btn" type="button">
+            Buy now
+          </button>
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#home">Home</a></li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#about">About us</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#about">How it’s made?</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#products">Our products</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#contacts">Contact</a>
+            </li>
+          </ul>
         </div>
+        <button class="button button--light button--arrow-dark header__button" type="button">
+          Buy now
+        </button>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="hero__wrapper">
+        <div class="hero___thumb">
+          <h1 class="main-title">
+            ice cream made with<span class="main-title__accent"> passion</span>
+          </h1>
+          <div class="hero-buttons">
+            <a class="button hero-buttons__button" href="#products">Products</a>
+            <a class="button button--light hero-buttons__button" href="#about">How it’s made?</a>
+          </div>
+        </div>
+        <ul class="sale-points-list">
+          <li class="sale-points-list__item">
+            <p class="accent-number">16</p>
+            <p class="sale-points-list__text">cafes</p>
+          </li>
+          <li class="sale-points-list__item">
+            <p class="accent-number">23</p>
+            <p class="sale-points-list__text">food trucks</p>
+          </li>
+        </ul>
+      </div>
+      <div class="description-block">
+        <p class="description-block__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="button-more button-more--little" aria-label="more"></button>
+      </div>
+      <img
+        class="bio-eco"
+        srcset="./images/bio-eco.png 1x, ./images/bio-eco_x2.png 2x"
+        src="./images/bio-eco.png"
+        alt="milk"
+        width="124px"
+      />
+      <img
+        class="so-tasty"
+        srcset="./images/so-tasty.png 1x, ./images/so-tasty_x2.png 2x"
+        src="./images/so-tasty.png"
+        alt="girl with ice-cream"
+        width="168px"
+      />
     </div>
+  </div>
 </section>

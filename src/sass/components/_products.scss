@@ -96,7 +96,7 @@
   }
 }
 
-.product-list__item--iceCream::before {
+.product-list__item--ice-cream::before {
   content: '';
   position: absolute;
   top: 0;
@@ -107,10 +107,10 @@
 
   transform: translate(-50%, -50%);
   background-size: cover;
-  background-image: url(/images/iceCream_250x250.png);
+  background-image: url(/images/ice-cream_250x250.png);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/iceCream_250x250_x2.png);
+    background-image: url(/images/ice-cream_250x250_x2.png);
   }
 
   @media screen and(min-width: $tablet) {
@@ -119,9 +119,9 @@
     width: 220px;
     height: 225px;
 
-    background-image: url(/images/iceCream_220x225.png);
+    background-image: url(/images/ice-cream_220x225.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/iceCream_220x225_x2.png);
+      background-image: url(/images/ice-cream_220x225_x2.png);
     }
   }
 
@@ -131,14 +131,14 @@
     width: 335px;
     height: 335px;
 
-    background-image: url(/images/iceCream_335x335.png);
+    background-image: url(/images/ice-cream_335x335.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/iceCream_335x335_x2.png);
+      background-image: url(/images/ice-cream_335x335_x2.png);
     }
   }
 }
 
-.product-list__item--iceCoffee::before {
+.product-list__item--ice-coffee::before {
   content: '';
   position: absolute;
   top: 0;
@@ -149,9 +149,9 @@
 
   transform: translate(-50%, -50%);
   background-size: cover;
-  background-image: url(/images/iceCoffee_250x250.png);
+  background-image: url(/images/ice-coffee_250x250.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/iceCoffee_250x250_x2.png);
+    background-image: url(/images/ice-coffee_250x250_x2.png);
   }
 
   @media screen and(min-width: $tablet) {
@@ -160,9 +160,9 @@
     width: 220px;
     height: 225px;
 
-    background-image: url(/images/iceCoffee_220x225.png);
+    background-image: url(/images/ice-coffee_220x225.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/iceCoffee_220x225_x2.png);
+      background-image: url(/images/ice-coffee_220x225_x2.png);
     }
   }
 
@@ -172,9 +172,9 @@
     width: 335px;
     height: 335px;
 
-    background-image: url(/images/iceCoffee_335x335.png);
+    background-image: url(/images/ice-coffee_335x335.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/iceCoffee_335x335_x2.png);
+      background-image: url(/images/ice-coffee_335x335_x2.png);
     }
   }
 }
