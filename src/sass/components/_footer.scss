@@ -11,10 +11,6 @@
     top: 80%;
     width: 100%;
 
-    @media screen and( min-width: $desktop) {
-      top: 85%;
-    }
-
     display: inline-block;
     vertical-align: bottom;
     border-bottom: 1px solid $reviews-bg-color;
