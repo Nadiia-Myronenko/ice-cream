@@ -2,6 +2,23 @@
   position: relative;
 
   background-color: $secondary-bg-color;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+
+    @media screen and( min-width: $desktop) {
+      top: 85%;
+    }
+
+    display: inline-block;
+    vertical-align: bottom;
+    border-bottom: 1px solid $reviews-bg-color;
+  }
 }
 .footer--flex {
   margin-bottom: 45px;
@@ -124,32 +141,17 @@
 }
 
 .footer__copyright {
-  padding: 0 70px 25px 60px;
-  width: 100%;
+  width: 150px;
+  margin: 0 auto;
+  padding-bottom: 25px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
 
-  &::before {
-    content: '';
-
-    position: absolute;
-    left: 0;
-    top: 80%;
-    width: 100%;
-
-    @media screen and( min-width: $desktop) {
-      top: 85%;
-    }
-
-    display: inline-block;
-    vertical-align: bottom;
-    border-bottom: 1px solid $reviews-bg-color;
-  }
-
   @media screen and( min-width: $tablet) {
+    width: 280px;
     padding-bottom: 20px;
   }
   @media screen and( min-width: $desktop) {
