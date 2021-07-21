@@ -12,7 +12,7 @@
 .section-about {
   background-position: 0 93%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   @media screen and (max-width: $tablet - 1px) {
     background-image: url(../images/milk_320x133.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -53,7 +53,7 @@
     width: 340px;
   }
   @media screen and (min-width: $desktop) {
-    width: 463px;
+    width: 515px;
     margin-right: 74px;
   }
 }
