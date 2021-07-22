@@ -1,0 +1,1 @@
+{"version":3,"sources":["slick.js"],"names":["$","slick","arrows","dots"],"mappings":";AACAA,EAAE,gBAAgBC,MAAM,CACpBC,QAAO,EACPC,MAAM","file":"slick.c9be6289.js","sourceRoot":"../src","sourcesContent":["\n$('.single-item').slick({\n    arrows:false,\n    dots: true\n})"]}
